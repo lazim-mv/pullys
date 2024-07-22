@@ -22,7 +22,7 @@ const UnderMaintainance = () => {
             unoptimized
           /> */}
           <h1 className={styles.logoBrandName}>PULLYS</h1>
-          <h1>Coming Soon</h1>
+          <h1 className={styles.comingSoon}>Coming Soon</h1>
           {/* <SectionTitle
             sectionText="Coming Soon"
             padding="0 0 0.3306878306878307vw 0"

@@ -21,6 +21,12 @@
 
 .logoBrandName {
   font-size: 5vw;
+  text-align: center;
+  margin-left: 1.5vw;
+}
+
+.comingSoon {
+  padding: 0 0 0.3306878306878307vw 0;
 }
 
 .maintainceLogo img {
@@ -42,6 +48,7 @@
 @media only screen and (max-width: 767px) {
   .lottieMaintainance {
     width: 87.2vw;
+    padding-right: 0;
   }
 
   /* Maintainance */
@@ -64,6 +71,12 @@
     height: auto;
     padding-right: 0;
     padding-bottom: 6.666666666666667vw;
+    width: auto;
+  }
+
+  .logoBrandName {
+    font-size: 20vw;
+    color: #fff;
   }
 
   .maintainceLogo img {
