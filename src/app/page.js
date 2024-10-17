@@ -15,6 +15,7 @@ export default function Home() {
   return (
     <main>
       <UnderMaintainance />
+      
       {/* <Hero />
       <AboutComponent
         buttonText="View More"
