@@ -50,7 +50,7 @@ const Stats = () => {
 
   useEffect(() => {
     if (inView) {
-      const duration = 1500; 
+      const duration = 1500;
       const startTime = performance.now();
 
       const animate = (time) => {
