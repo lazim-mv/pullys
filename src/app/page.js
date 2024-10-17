@@ -10,6 +10,7 @@ import Container7 from "./components/container7/Container7";
 import ContactForm from "./components/contactform/ContactForm";
 import image from "../../public/common/about.png";
 import image1 from "../../public/common/container5.png";
+import { headers } from "next/headers";
 
 export default function Home() {
   return (

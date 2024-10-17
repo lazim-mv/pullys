@@ -17,6 +17,8 @@ import { headers } from "next/headers";
 const AboutPage = () => {
   const header = headers();
   const viewport = header.get("x-viewport");
+  const host = header.get("hostname");
+  console.log(host, "Hostname");
 
   const isMobile = viewport === "mobile" ? true : false;
   return (
