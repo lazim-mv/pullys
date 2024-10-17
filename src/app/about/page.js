@@ -3,6 +3,7 @@ import styles from "./aboutpage.module.css";
 import Hero from "../components/hero/Hero";
 import PageHero from "../components/pageheroes/PageHero";
 import heroImage from "../../../public/aboutPage/pageHero/1.png";
+import mobileHeroImage from "../../../public/aboutPage/pageHero/m1.png";
 import AboutComponent from "../components/about/AboutComponent";
 import image1 from "../../../public/aboutPage/1.png";
 import image2 from "../../../public/aboutPage/2.png";
@@ -11,11 +12,20 @@ import Container5 from "../components/container5/Container5";
 import Cards from "../components/cards/Cards";
 import Container7 from "../components/container7/Container7";
 import ContactForm from "../components/contactform/ContactForm";
+import { headers } from "next/headers";
 
 const AboutPage = () => {
+  const header = headers();
+  const viewport = header.get("x-viewport");
+
+  const isMobile = viewport === "mobile" ? true : false;
   return (
     <div>
-      <PageHero img={heroImage} title="About Us" subTitle="Home / About Us" />
+      <PageHero
+        img={isMobile ? mobileHeroImage : heroImage}
+        title="About Us"
+        subTitle="Home / About Us"
+      />
       <AboutComponent
         img={image1}
         title="About Us"
@@ -28,6 +38,7 @@ const AboutPage = () => {
         desc="Since 1978, we have built a legacy of excellence across diverse industries. Our commitment to quality, innovation, and customer satisfaction has established us as a trusted leader in trading, industrial services, and manufacturing. With over 45 years of experience, we continue to set high standards, ensuring that every product and service reflects our dedication to excellence and reliability."
         img={image2}
         key={4}
+        page="about"
       />
       <Cards />
       <Container7 />

@@ -68,6 +68,25 @@
   --mfont18: 4.8vw;
   --mlineHeight18: 5.624vw;
   --mletterSpace18: 0.4266666666666667vw;
+
+  --mspacing4: 1.0666666666666667vw;
+  --mspacing8: 2.1333333333333333vw;
+  --mspacing10: 2.666666666666667vw;
+  --mspacing12: 3.2vw;
+  --mspacing14: 3.733333333333334vw;
+  --mspacing16: 4.266666666666667vw;
+  --mspacing18: 4.8vw;
+  --mspacing20: 5.333333333333334vw;
+  --mspacing24: 6.4vw;
+  --mspacing30: 8vw;
+  --mspacing40: 10.666666666666668vw;
+  --mspacing50: 13.333333333333334vw;
+  --mspacing60: 16vw;
+  --mspacing70: 18.666666666666668vw;
+  --mspacing80: 20.8vw;
+  --mspacing100: 26.4vw;
+  --mspacing120: 32vw;
+  --mspacing150: 39.99999999999999vw;
 }
 
 .container {
@@ -124,4 +143,54 @@
 
 .arrow:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    padding: 0 var(--mspacing24);
+    gap: 0;
+    align-items: center;
+    margin-bottom: var(--mspacing60);
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: var(--mspacing30);
+  }
+
+  .cards {
+    display: flex;
+    gap: var(--mspacing20);
+    overflow-x: auto;
+    width: auto;
+    margin-bottom: var(--mspacing30);
+    margin-left: 198vw;
+  }
+
+  .card {
+    background: #f5f5f5;
+    width: 66.66666666666666vw;
+    padding: var(--mspacing30) var(--mspacing20);
+  }
+
+  .card .description {
+    min-height: 11.5vw;
+  }
+
+  .profile {
+    display: flex;
+    gap: var(--mspacing12);
+    align-items: center;
+    margin-top: var(--mspacing32);
+  }
+
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #002d4c;
+    width: var(--mspacing40);
+    height: var(--mspacing40);
+  }
 }

@@ -1,10 +1,9 @@
 "use client";
-import { useWindowSize } from "@/app/utils/windowSize";
 import ArrowButtons from "../common/ArrowButton/ArrowButtons";
 import styles from "./container6.module.css";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import { useViewport } from "@/app/context/ViewportContext";
 
 const cardsData = [
   {
@@ -33,21 +32,22 @@ const Container6 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { windowSize, isSmallScreen } = useWindowSize();
+  const viewport = useViewport();
+  const isMobile = viewport === "mobile";
   const cardData = cardsData;
 
   const totalData = cardData.length;
-  const clicks = isSmallScreen ? totalData - 1 : totalData - 3;
-  const dynamicValue = isSmallScreen ? 70 : 27;
+  const clicks = isMobile ? totalData - 1 : totalData - 3;
+  const dynamicValue = isMobile ? 70 : 27;
 
   const nextImage = () => {
     if (currentIndex < clicks) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
-      console.log("clicked1");
-      console.log(currentIndex);
+      // console.log("clicked1");
+      // console.log(currentIndex);
     } else {
       setCurrentIndex(0);
-      console.log("clicked2");
+      // console.log("clicked2");
     }
   };
 
@@ -75,7 +75,7 @@ const Container6 = () => {
             style={{
               transform: `translateX(-${currentIndex * dynamicValue}vw)`,
               transition: `transform 0.8s ease, ${
-                !isSmallScreen ? "width" : "height"
+                !isMobile ? "width" : "height"
               } 0.8s ease`,
             }}
           >
@@ -91,12 +91,10 @@ const Container6 = () => {
           </div>
         ))}
       </div>
-      {!isSmallScreen && (
+      {!isMobile && (
         <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
       )}
-      {isSmallScreen && (
-        <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
-      )}
+      {isMobile && <ArrowButtons prevImage={prevImage} nextImage={nextImage} />}
     </div>
   );
 };

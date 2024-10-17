@@ -4,14 +4,16 @@ import styles from "./hero.module.css";
 import Image from "next/image";
 import heroImage from "../../../../public/hero/hero.png";
 import heroImageMobile from "../../../../public/hero/mhero.png";
-import { useWindowSize } from "@/app/utils/windowSize";
+import { useViewport } from "@/app/context/ViewportContext";
 
 const Hero = () => {
-  const { windowSize, isSmallScreen } = useWindowSize();
+  const viewport = useViewport();
+  const isMobile = viewport === "mobile";
+
   return (
     <div className={styles.container}>
       <Image
-        src={isSmallScreen ? heroImageMobile : heroImage}
+        src={isMobile ? heroImageMobile : heroImage}
         alt="hero banner"
         className={styles.heroImage}
       />

@@ -68,6 +68,25 @@
   --mfont18: 4.8vw;
   --mlineHeight18: 5.624vw;
   --mletterSpace18: 0.4266666666666667vw;
+
+  --mspacing4: 1.0666666666666667vw;
+  --mspacing8: 2.1333333333333333vw;
+  --mspacing10: 2.666666666666667vw;
+  --mspacing12: 3.2vw;
+  --mspacing14: 3.733333333333334vw;
+  --mspacing16: 4.266666666666667vw;
+  --mspacing18: 4.8vw;
+  --mspacing20: 5.333333333333334vw;
+  --mspacing24: 6.4vw;
+  --mspacing30: 8vw;
+  --mspacing40: 10.666666666666668vw;
+  --mspacing50: 13.333333333333334vw;
+  --mspacing60: 16vw;
+  --mspacing70: 18.666666666666668vw;
+  --mspacing80: 20.8vw;
+  --mspacing100: 26.4vw;
+  --mspacing120: 32vw;
+  --mspacing150: 39.99999999999999vw;
 }
 
 .container {
@@ -107,4 +126,54 @@
 
 .answer {
   margin-top: var(--font24);
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--mspacing24);
+    align-items: center;
+    margin-bottom: var(--mspacing60);
+  }
+
+  .cards {
+    margin-top: var(--mspacing30);
+    display: flex;
+    flex-direction: column;
+    gap: var(--mspacing20);
+    width: 100%;
+    margin-bottom: var(--mspacing30);
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .question {
+    display: flex;
+    gap: 1vw;
+    padding-bottom: var(--mspacing16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .questionText {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .questionText h3 {
+    width: 72.13333333333333vw;
+  }
+
+  .questionText img {
+    margin-top: var(--mspacing8);
+  }
+
+  .answer {
+    margin-top: var(--mspacing16);
+    padding-bottom: var(--mspacing16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
 }

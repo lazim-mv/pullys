@@ -3,11 +3,11 @@ import styles from "./container5.module.css";
 import Image from "next/image";
 import { BtnComponent } from "../common/ButtonComponent";
 
-const Container5 = ({ title, img, desc, buttonText, href }) => {
+const Container5 = ({ title, img, desc, buttonText, href, page }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>{title}</h2>
+        <h2 style={{ textAlign: page ? "left" : "center" }}>{title}</h2>
         <p>{desc}</p>
         {buttonText && (
           <a href={href}>

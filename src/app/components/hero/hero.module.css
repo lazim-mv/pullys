@@ -99,6 +99,7 @@
 
 .contents p {
   color: #fff;
+  width: 42.79100529100529vw;
 }
 
 @media only screen and (max-width: 767px) {
@@ -147,5 +148,6 @@
 
   .contents p {
     color: #fff;
+    width: auto;
   }
 }

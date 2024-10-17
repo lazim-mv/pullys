@@ -8,7 +8,6 @@ import Container5 from "./components/container5/Container5";
 import Container6 from "./components/container6/Container6";
 import Container7 from "./components/container7/Container7";
 import ContactForm from "./components/contactform/ContactForm";
-import Footer from "./components/footer/Footer";
 import image from "../../public/common/about.png";
 import image1 from "../../public/common/container5.png";
 

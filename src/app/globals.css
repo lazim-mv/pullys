@@ -83,14 +83,17 @@
   --mspacing20: 5.333333333333334vw;
   --mspacing24: 6.4vw;
   --mspacing30: 8vw;
+  --mspacing32: 8.533333333333333vw;
   --mspacing40: 10.666666666666668vw;
   --mspacing50: 13.333333333333334vw;
   --mspacing60: 16vw;
+  --mspacing68: 18.133333333333333vw;
   --mspacing70: 18.666666666666668vw;
   --mspacing80: 20.8vw;
   --mspacing100: 26.4vw;
   --mspacing120: 32vw;
   --mspacing150: 39.99999999999999vw;
+  --mspacing300: 80vw;
 }
 
 * {
@@ -176,7 +179,7 @@ p {
 }
 
 span {
-  color: #2b61f7;
+  color: #1a1a1a;
   text-transform: capitalize;
 }
 
@@ -208,7 +211,7 @@ a {
 }
 
 .active {
-  color: #2b61f7;
+  color: burlywood;
   font-weight: 400;
 }
 

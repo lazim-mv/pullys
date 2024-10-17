@@ -69,6 +69,25 @@
   --mfont18: 4.8vw;
   --mlineHeight18: 5.624vw;
   --mletterSpace18: 0.4266666666666667vw;
+
+  --mspacing4: 1.0666666666666667vw;
+  --mspacing8: 2.1333333333333333vw;
+  --mspacing10: 2.666666666666667vw;
+  --mspacing12: 3.2vw;
+  --mspacing14: 3.733333333333334vw;
+  --mspacing16: 4.266666666666667vw;
+  --mspacing18: 4.8vw;
+  --mspacing20: 5.333333333333334vw;
+  --mspacing24: 6.4vw;
+  --mspacing30: 8vw;
+  --mspacing40: 10.666666666666668vw;
+  --mspacing50: 13.333333333333334vw;
+  --mspacing60: 16vw;
+  --mspacing70: 18.666666666666668vw;
+  --mspacing80: 20.8vw;
+  --mspacing100: 26.4vw;
+  --mspacing120: 32vw;
+  --mspacing150: 39.99999999999999vw;
 }
 
 .container {
@@ -123,11 +142,6 @@
   border: none;
 }
 
-.button {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .bottomContainer {
   margin-top: var(--spacing100);
 }
@@ -161,4 +175,59 @@
 
 .location {
   width: 26vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    padding: var(--mspacing40) var(--mspacing24);
+    gap: 0;
+    align-items: center;
+    /* margin-bottom: var(--mspacing60); */
+    flex-direction: column;
+  }
+
+  .form {
+    margin-top: var(--mspacing30);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--mspacing20);
+  }
+
+  .row {
+    display: flex;
+    gap: var(--mspacing20);
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .row input::placeholder,
+  .row textarea::placeholder {
+    color: #7e7e7e;
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 5.866666666666666vw;
+    letter-spacing: -0.0009599999999999999vw;
+    opacity: 1;
+  }
+
+  .row input {
+    width: 100%;
+    border: none;
+    height: 16.53333333333333vw;
+    padding-left: var(--mspacing24);
+  }
+
+  .twoFields input {
+    width: 100%;
+  }
+
+  .row textarea {
+    width: 100%;
+    padding-left: var(--mspacing24);
+    padding-top: var(--mspacing20);
+    height: 49.6vw;
+    border: none;
+  }
 }

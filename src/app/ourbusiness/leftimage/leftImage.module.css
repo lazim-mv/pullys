@@ -50,6 +50,28 @@
   --mfont18: 4.8vw;
   --mlineHeight18: 5.624vw;
   --mletterSpace18: 0.4266666666666667vw;
+
+  --mspacing4: 1.0666666666666667vw;
+  --mspacing8: 2.1333333333333333vw;
+  --mspacing10: 2.666666666666667vw;
+  --mspacing12: 3.2vw;
+  --mspacing14: 3.733333333333334vw;
+  --mspacing16: 4.266666666666667vw;
+  --mspacing18: 4.8vw;
+  --mspacing20: 5.333333333333334vw;
+  --mspacing24: 6.4vw;
+  --mspacing30: 8vw;
+  --mspacing32: 8.533333333333333vw;
+  --mspacing40: 10.666666666666668vw;
+  --mspacing50: 13.333333333333334vw;
+  --mspacing60: 16vw;
+  --mspacing68: 18.133333333333333vw;
+  --mspacing70: 18.666666666666668vw;
+  --mspacing80: 20.8vw;
+  --mspacing100: 26.4vw;
+  --mspacing120: 32vw;
+  --mspacing150: 39.99999999999999vw;
+  --mspacing300: 80vw;
 }
 
 .container {
@@ -84,4 +106,48 @@
   height: 0.6613756613756614vw;
   border-radius: 0.6613756613756614vw;
   background: #1a1a1a;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    padding: 0 var(--mspacing24);
+    gap: 0;
+    align-items: center;
+    margin-bottom: var(--mspacing60);
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: 90.66666666666666vw;
+  }
+
+  .content {
+    order: -1;
+    margin-bottom: var(--mspacing30);
+  }
+
+  .content h2 {
+    margin-bottom: var(--mspacing20);
+    text-align: left;
+  }
+
+  .content .desc {
+    margin-bottom: var(--mspacing20);
+  }
+
+  .list {
+    display: flex;
+    gap: var(--mspacing8);
+    align-items: center;
+  }
+
+  .dot {
+    width: var(--mspacing8);
+    height: var(--mspacing8);
+    border-radius: var(--mspacing8);
+    background: #1a1a1a;
+    margin-bottom: 0.6vw;
+  }
 }

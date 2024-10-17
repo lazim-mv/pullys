@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const cardsData = [
   {
-    question: "1.   What industries does Pullys Group operate in?",
+    question: "What industries does Pullys Group operate in?",
     answer:
       "Pulleys Group operates in various industries, including trading (spices, food and beverages, confectioneries, fabrics, and industrial materials), industrial services (MEP, HVAC, mechanical construction), and manufacturing (pet accessories and pet food).",
   },
@@ -54,8 +54,8 @@ const Container7 = () => {
           >
             <div className={styles.question}>
               <h3>{index + 1}.</h3>
-              <h3 className={styles.questionText}>
-                {data.question}
+              <div className={styles.questionText}>
+                <h3>{data.question}</h3>
                 <Image
                   src={plusOrCross}
                   alt="plus or cross"
@@ -65,7 +65,7 @@ const Container7 = () => {
                     transition: "transform 0.3s ease-in-out",
                   }}
                 />
-              </h3>
+              </div>
             </div>
             {expandedIndex === index && (
               <div className={styles.answer}>

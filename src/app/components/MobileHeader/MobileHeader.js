@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "./mobileHeader.module.css";
 import { BtnComponent } from "../common/ButtonComponent";
-import logo from "../../../../public/logo.svg";
+import logo from "../../../../public/mlogo.svg";
 
 function MobileHeader() {
   const pathname = usePathname();
@@ -22,19 +22,16 @@ function MobileHeader() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About Us", href: "/pages/About/" },
-    { text: "Our Works", href: "#ourwork" },
-    { text: "Services", href: "/pages/Services/" },
-    { text: "Blog", href: "/pages/HeaderBlog/" },
-    { text: "Contact Us", href: "/pages/Contact/" },
+    { text: "About Us", href: "/about" },
+    { text: "Our Business", href: "/ourbusiness" },
   ];
 
   return (
     <div
       className={styles.mHeader}
       style={{
-        backgroundColor: "transparent",
-        height: "21.333333333333336vw",
+        backgroundColor: isMenuOpen ? "rgba(0, 0, 0, 0.4)" : "transparent",
+        height: "16vw",
         position: "absolute",
         top: 0,
         left: 0,
@@ -58,8 +55,8 @@ function MobileHeader() {
           <div>
             <Image
               src={logo}
-              width={120}
-              height={30}
+              width={104}
+              height={24}
               alt="ImageHeader"
               className={styles.logo}
             />
@@ -78,16 +75,17 @@ function MobileHeader() {
         <div
           style={{
             position: "absolute",
-            top: "21.333333333333336vw",
+            top: "16vw",
             right: 0,
             width: "100vw",
             height: isMenuOpen ? "auto" : "0vh",
-            backgroundColor: "#12171c",
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
             zIndex: 52,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             padding: "24px",
+            // boxShadow: "2px white",
             gap: "10px",
             opacity: isMenuOpen ? 1 : 0,
             transition: "opacity 0.4s ease",
@@ -123,7 +121,10 @@ function MobileHeader() {
               </a>
             ))}
 
-            <a href="/" style={{ display: isMenuOpen ? "block" : "none" }}>
+            <a
+              href="/contactus"
+              style={{ display: isMenuOpen ? "block" : "none" }}
+            >
               <BtnComponent
                 buttonText="Get in Touch"
                 header={true}

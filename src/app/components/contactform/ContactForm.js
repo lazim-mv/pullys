@@ -26,7 +26,11 @@ const ContactForm = ({ contactPage }) => {
           <textarea type="text" placeholder="Your Message" />
         </div>
         <div className={`${styles.row} ${styles.button}`}>
-          <BtnComponent buttonText="Send Message" bg="#002D4C" />
+          <BtnComponent
+            buttonText="Send Message"
+            bg="#002D4C"
+            margin={"0 0 0 auto"}
+          />
         </div>
       </form>
       {contactPage && (

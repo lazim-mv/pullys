@@ -33,8 +33,10 @@ const Card = ({ icon, cardHeading, desc }) => {
   return (
     <div className={styles.card}>
       <Image src={icon} alt="icon" width={70} height={70} />
-      <h3 className={styles.cardHeading}>{cardHeading}</h3>
-      <p className={styles.desc}>{desc}</p>
+      <div className={styles.cardContent}>
+        <h3 className={styles.cardHeading}>{cardHeading}</h3>
+        <p className={styles.desc}>{desc}</p>
+      </div>
     </div>
   );
 };

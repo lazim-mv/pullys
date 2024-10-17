@@ -160,6 +160,7 @@
 
   .card h3 {
     margin-bottom: var(--mspacing4);
+    text-align: left;
   }
 
   .card p {

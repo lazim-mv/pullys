@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import { useWindowSize } from "../../utils/windowSize";
+import React from "react";
 import rightArrow from "../../../../public/common/rightarrow.svg";
+import { useViewport } from "@/app/context/ViewportContext";
 
 const BtnComponent = ({
   borderColor,
@@ -18,9 +18,9 @@ const BtnComponent = ({
   header,
   contact,
 }) => {
-  useEffect(() => {});
-  const { windowSize, isSmallScreen } = useWindowSize();
-  console.log(isSmallScreen, "btn");
+  const viewport = useViewport();
+  const isMobile = viewport === "mobile";
+
   return (
     <div
       className={`btnContainer ${contact ? "new" : ""}`}
@@ -38,19 +38,19 @@ const BtnComponent = ({
     >
       <h5
         style={{
-          paddingTop: !isSmallScreen
+          paddingTop: !isMobile
             ? "0.992063492063492vw "
             : "2.666666666666667vw",
 
-          paddingBottom: !isSmallScreen
+          paddingBottom: !isMobile
             ? "0.992063492063492vw "
             : "2.666666666666667vw",
 
-          paddingLeft: !isSmallScreen
+          paddingLeft: !isMobile
             ? "2.6455026455026456vw "
             : "5.333333333333334vw",
 
-          paddingRight: !isSmallScreen
+          paddingRight: !isMobile
             ? arrow
               ? "2.6455026455026456vw"
               : "0.6613756613756614vw"
@@ -70,7 +70,7 @@ const BtnComponent = ({
           priority={true}
           unoptimized
           style={{
-            paddingRight: !isSmallScreen
+            paddingRight: !isMobile
               ? "2.666666666666667vw"
               : "5.333333333333334vw",
           }}

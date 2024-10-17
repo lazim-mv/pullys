@@ -53,7 +53,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className={styles.copyRight}>© 2021 Pullysons. All rights reserved.</p>
+      <p className={styles.copyRight}>
+        © 2024 All Right Reserved | Powered by procube.cx
+      </p>
     </div>
   );
 };
