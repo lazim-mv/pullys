@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import MobileHeader from "./components/MobileHeader/MobileHeader";
 import { ViewportProvider } from "./context/ViewportContext";
 import { headers } from "next/headers";
+import UnderMaintainance from "./components/undermaintainance/UnderMaintainance";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,16 +17,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const header = headers();
   const viewport = header.get("x-viewport");
-  
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ViewportProvider value={viewport}>
+        <UnderMaintainance />
+        {/* <ViewportProvider value={viewport}>
           <Header />
           <MobileHeader />
           {children}
           <Footer />
-        </ViewportProvider>
+        </ViewportProvider> */}
       </body>
     </html>
   );

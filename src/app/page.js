@@ -14,9 +14,7 @@ import image1 from "../../public/common/container5.png";
 export default function Home() {
   return (
     <main>
-      <UnderMaintainance />
-      
-      {/* <Hero />
+      <Hero />
       <AboutComponent
         buttonText="View More"
         title="About Us"
@@ -47,7 +45,7 @@ export default function Home() {
       />
       <Container6 />
       <Container7 />
-      <ContactForm /> */}
+      <ContactForm />
     </main>
   );
 }
