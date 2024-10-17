@@ -17,9 +17,9 @@ function MobileHeader() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  // const toggleDropdown = () => {
+  //   setIsDropdownOpen(!isDropdownOpen);
+  // };
 
   const menuList = [
     { text: "Home", href: "/" },
@@ -117,14 +117,16 @@ function MobileHeader() {
                     ? "translateY(0)"
                     : "translateY(-100vw)",
                 }}
+                onClick={toggleMenu}
               >
                 {item.text}
               </Link>
             ))}
 
-            <a
+            <Link
               href="/contactus"
               style={{ display: isMenuOpen ? "block" : "none" }}
+              onClick={toggleMenu}
             >
               <BtnComponent
                 buttonText="Get in Touch"
@@ -133,7 +135,7 @@ function MobileHeader() {
                 arrow={true}
                 color="#ffffff"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
