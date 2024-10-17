@@ -17,6 +17,8 @@ const ContactPage = () => {
         title="Contact Us"
         subTitle="Home / Contact Us"
         marginBottom="0"
+        imgWidth={isMobile ? 375 : 1512}
+        imgHeight={isMobile ? 300 : 500}
       />
       <div className={styles.margin}>
         <ContactForm contactPage={true} />

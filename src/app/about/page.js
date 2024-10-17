@@ -25,7 +25,8 @@ const AboutPage = () => {
         img={isMobile ? mobileHeroImage : heroImage}
         title="About Us"
         subTitle="Home / About Us"
-        host={host}
+        imgWidth={isMobile ? 375 : 1512}
+        imgHeight={isMobile ? 300 : 500}
       />
       <AboutComponent
         img={image1}

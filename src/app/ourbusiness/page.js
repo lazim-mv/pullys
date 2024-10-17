@@ -41,6 +41,8 @@ const OurBusiness = () => {
         img={isMobile ? mobileHeroImage : heroImage}
         title="Our Business"
         subTitle="Home / Our Business"
+        imgWidth={isMobile ? 375 : 1512}
+        imgHeight={isMobile ? 300 : 500}
       />
       <LeftImage
         title="Trading"

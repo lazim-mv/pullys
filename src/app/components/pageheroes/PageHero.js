@@ -1,13 +1,16 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./pagehero.module.css";
 import Header from "../header/Header";
 import Image from "next/image";
 
-const PageHero = ({ title, img, subTitle, marginBottom, host }) => {
-  console.log("pagehero");
-  console.log(host, "hostof");
-
+const PageHero = ({
+  title,
+  img,
+  subTitle,
+  marginBottom,
+  imgWidth,
+  imgHeight,
+}) => {
   return (
     <div style={{ marginBottom: marginBottom }} className={styles.container}>
       <Header />
@@ -15,8 +18,8 @@ const PageHero = ({ title, img, subTitle, marginBottom, host }) => {
         src={img}
         alt="hero banner"
         className={styles.heroImage}
-        width={isMobile ? 375 : 1512}
-        height={isMobile ? 300 : 500}
+        width={imgWidth}
+        height={imgHeight}
         loading="eager"
         quality={100}
       />
