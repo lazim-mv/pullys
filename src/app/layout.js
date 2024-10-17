@@ -20,15 +20,15 @@ export default function RootLayout({ children }) {
   const host = header.get("x-host");
 
   console.log(host, "hosttt");
-  if (host === "true") {
-    return (
-      <html lang="en">
-        <body className={inter.className}>
-          <UnderMaintainance />
-        </body>
-      </html>
-    );
-  }
+  // if (host === "true") {
+  //   return (
+  //     <html lang="en">
+  //       <body className={inter.className}>
+  //         <UnderMaintainance />
+  //       </body>
+  //     </html>
+  //   );
+  // }
 
   return (
     <html lang="en">

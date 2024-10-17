@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import styles from "./pagehero.module.css";
 import Header from "../header/Header";
 import Image from "next/image";
@@ -6,6 +7,7 @@ import Image from "next/image";
 const PageHero = ({ title, img, subTitle, marginBottom, host }) => {
   console.log("pagehero");
   console.log(host, "hostof");
+
   return (
     <div style={{ marginBottom: marginBottom }} className={styles.container}>
       <Header />

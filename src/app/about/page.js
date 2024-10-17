@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "./aboutpage.module.css";
-import Hero from "../components/hero/Hero";
 import PageHero from "../components/pageheroes/PageHero";
 import heroImage from "../../../public/aboutPage/pageHero/1.png";
 import mobileHeroImage from "../../../public/aboutPage/pageHero/m1.png";
