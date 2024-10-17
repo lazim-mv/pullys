@@ -52,7 +52,7 @@ function MobileHeader() {
           borderBottom: "0.26666666666666666vw solid rgba(255,255,255,0.6)",
         }}
       >
-        <Link href="/" onClick={toggleMenu}>
+        <Link href="/" onClick={() => setIsMenuOpen(false)}>
           <div>
             <Image
               src={logo}
@@ -61,6 +61,7 @@ function MobileHeader() {
               alt="ImageHeader"
               className={styles.logo}
               loading="eager"
+              quality={100}
             />
           </div>
         </Link>

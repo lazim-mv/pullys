@@ -6,6 +6,7 @@
   padding: var(9.920634920634921vw);
   /* background-color: #0d0d0d; */
   background-color: #051d48;
+  /* margin-bottom: ; */
 }
 
 .maintainceLogo {
@@ -78,6 +79,7 @@
   .logoBrandName {
     font-size: 20vw;
     color: #fff;
+    line-height: normal;
   }
 
   .maintainceLogo img {
