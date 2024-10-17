@@ -15,8 +15,10 @@ const PageHero = ({ title, img, subTitle, marginBottom, host }) => {
         src={img}
         alt="hero banner"
         className={styles.heroImage}
+        width={isMobile ? 375 : 1512}
+        height={isMobile ? 300 : 500}
+        loading="eager"
         quality={100}
-        priority
       />
       <div className={styles.heroContentContainer}>
         <div className={styles.contents}>

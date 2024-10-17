@@ -16,6 +16,10 @@ const Hero = () => {
         src={isMobile ? heroImageMobile : heroImage}
         alt="hero banner"
         className={styles.heroImage}
+        width={isMobile ? 375 : 1512}
+        height={isMobile ? 700 : 800}
+        quality={100}
+        loading="eager"
       />
       <div className={styles.heroContentContainer}>
         <div className={styles.contents}>
