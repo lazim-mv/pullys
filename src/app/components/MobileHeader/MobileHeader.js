@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import styles from "./mobileHeader.module.css";
 import { BtnComponent } from "../common/ButtonComponent";
 import logo from "../../../../public/mlogo.svg";
+import Link from "next/link";
 
 function MobileHeader() {
   const pathname = usePathname();
@@ -100,7 +101,7 @@ function MobileHeader() {
             }}
           >
             {menuList.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 className={`linksWrapper linksText ${
                   pathname !== undefined &&
@@ -118,7 +119,7 @@ function MobileHeader() {
                 }}
               >
                 {item.text}
-              </a>
+              </Link>
             ))}
 
             <a

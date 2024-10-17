@@ -3,9 +3,9 @@ import styles from "./pagehero.module.css";
 import Header from "../header/Header";
 import Image from "next/image";
 
-const PageHero = ({ title, img, subTitle }) => {
+const PageHero = ({ title, img, subTitle, marginBottom }) => {
   return (
-    <div className={styles.container}>
+    <div style={{ marginBottom: marginBottom }} className={styles.container}>
       <Header />
       <Image src={img} alt="hero banner" className={styles.heroImage} />
       <div className={styles.heroContentContainer}>

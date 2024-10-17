@@ -230,4 +230,53 @@
     height: 49.6vw;
     border: none;
   }
+
+  .bottomContainer {
+    margin-top: var(--mspacing40);
+    width: 100%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mspacing20);
+    margin-top: var(--mspacing20);
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: var(--mspacing12);
+    width: 100%;
+  }
+
+  .card1 p {
+    white-space: nowrap;
+  }
+
+  .iconContainer {
+    width: var(--mspacing40);
+    height: var(--mspacing40);
+    border-radius: var(--mspacing40);
+    background-color: #002d4c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconContainer img {
+    width: 5.973333333333334vw;
+    height: 5.973333333333334vw;
+  }
+
+  .location {
+    width: 90%;
+  }
+
+  .location:nth-child(2) {
+    width: 85%;
+  }
 }

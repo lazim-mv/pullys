@@ -21,10 +21,10 @@ const Footer = () => {
         <div className={styles.secondColomn}>
           <h3 className={styles.title}>Quick Links</h3>
           <div className={styles.links}>
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Business</a>
-            <a href="">Contact Us</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/ourbusiness">Business</a>
+            <a href="/contactus">Contact Us</a>
           </div>
         </div>
         <div className={styles.thirdColomn}>
