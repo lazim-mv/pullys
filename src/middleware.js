@@ -13,7 +13,7 @@ export function middleware(request) {
 
   const host = request.nextUrl.hostname;
   console.log(host, "hosturl");
-  if (host === "https://www.pullysons.com/") {
+  if (host === "https://pullys.vercel.app/") {
     response.headers.set("hostname", host);
     response.headers.set("x-host", "true");
   }
