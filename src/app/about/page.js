@@ -27,6 +27,7 @@ const AboutPage = () => {
         img={isMobile ? mobileHeroImage : heroImage}
         title="About Us"
         subTitle="Home / About Us"
+        host={host}
       />
       <AboutComponent
         img={image1}
