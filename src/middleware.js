@@ -11,6 +11,13 @@ export function middleware(request) {
   const isMobile = ua.device.type === "mobile" || ua.device.type === "tablet";
   const viewport = isMobile ? "mobile" : "desktop";
 
+  const host = request.nextUrl.hostname;
+  console.log(host, "hosturl");
+  if (host === "https://www.pullysons.com/") {
+    response.headers.set("hostname", host);
+    response.headers.set("x-host", "true");
+  }
+
   response.headers.set("x-viewport", viewport);
 
   return response;

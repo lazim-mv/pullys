@@ -5,10 +5,16 @@ import Image from "next/image";
 import heroImage from "../../../../public/hero/hero.png";
 import heroImageMobile from "../../../../public/hero/mhero.png";
 import { useViewport } from "@/app/context/ViewportContext";
+import { headers } from "next/headers";
 
 const Hero = () => {
   const viewport = useViewport();
   const isMobile = viewport === "mobile";
+
+  const header = headers();
+  const host = header.get("hostname");
+
+  console.log(host, "hostname");
 
   return (
     <div className={styles.container}>
