@@ -111,7 +111,7 @@
   width: 100%;
   height: var(--spacing500);
   z-index: -1;
-  filter: brightness(0.6);
+  /* filter: brightness(0.6); */
 }
 
 .heroContentContainer {
@@ -132,7 +132,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: var(--mspacing60);
+  margin-top: var(--spacing70);
 }
 
 .contents h1 {
@@ -188,6 +188,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: var(--mspacing60);
   }
 
   .contents h1 {

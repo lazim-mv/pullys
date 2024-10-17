@@ -164,7 +164,7 @@
 
   .card img {
     height: 68vw;
-    margin-bottom: var(--gap20);
+    margin-bottom: 0;
     width: 100%;
   }
 

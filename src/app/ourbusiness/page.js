@@ -1,7 +1,7 @@
 import React from "react";
 import PageHero from "../components/pageheroes/PageHero";
 import heroImage from "../../../public/businesspage/heroimage.png";
-import mobileHeroImage from "../../../public/businesspage/m1hero.png";
+import mobileHeroImage from "../../../public/businesspage/m3hero.png";
 import image2 from "../../../public/businesspage/2.png";
 import mobileimage2 from "../../../public/businesspage/m2.png";
 import image1 from "../../../public/businesspage/1.png";
@@ -45,19 +45,19 @@ const OurBusiness = () => {
       <LeftImage
         title="Trading"
         desc="We specialize in trading a diverse range of high-quality products, ensuring reliable supply and exceptional service across various sectors."
-        leftImg={isMobile ? mobileimage2 : image2}
+        leftImg={image2}
         list={list1}
       />
       <LeftImage
         title="Industrial Services"
         desc="Our industrial services provide tailored solutions that enhance operational efficiency and ensure compliance with industry standards."
-        rightImg={isMobile ? mobileimage3 : image3}
+        rightImg={image3}
         list={list2}
       />
       <LeftImage
         title="Manufacturing"
         desc="We manufacture premium pet accessories and nutritious pet food, prioritizing quality and safety for the well-being of pets"
-        leftImg={isMobile ? mobileimage1 : image1}
+        leftImg={image1}
         list={list3}
       />
       <Container6 />

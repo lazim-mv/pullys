@@ -124,6 +124,10 @@
   align-items: center;
 }
 
+.questionText img {
+  height: 1.1243386243386242vw;
+}
+
 .answer {
   margin-top: var(--font24);
 }
@@ -161,6 +165,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .questionText img {
+    height: 4.533333333333333vw;
   }
 
   .questionText h3 {

@@ -151,7 +151,7 @@
   .cards {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing32);
+    gap: var(--mspacing20);
   }
 
   .card {

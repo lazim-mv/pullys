@@ -11,7 +11,13 @@ const PageHero = ({ title, img, subTitle, marginBottom, host }) => {
   return (
     <div style={{ marginBottom: marginBottom }} className={styles.container}>
       <Header />
-      <Image src={img} alt="hero banner" className={styles.heroImage} />
+      <Image
+        src={img}
+        alt="hero banner"
+        className={styles.heroImage}
+        quality={100}
+        priority
+      />
       <div className={styles.heroContentContainer}>
         <div className={styles.contents}>
           <h1>{title}</h1>

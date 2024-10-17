@@ -173,6 +173,10 @@
   align-items: center;
 }
 
+.iconContainer img {
+  height: 1.8518518518518516vw;
+}
+
 .location {
   width: 26vw;
 }

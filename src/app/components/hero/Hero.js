@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./hero.module.css";
 import Image from "next/image";
 import heroImage from "../../../../public/hero/hero.png";
-import heroImageMobile from "../../../../public/hero/mhero.png";
+import heroImageMobile from "../../../../public/hero/m3hero.png";
 import { useViewport } from "@/app/context/ViewportContext";
 
 const Hero = () => {

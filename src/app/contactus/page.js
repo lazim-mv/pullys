@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./contactus.module.css";
 import ContactForm from "../components/contactform/ContactForm";
 import heroImage from "../../../public/contactpage/1.png";
-import mobileHeroImage from "../../../public/contactpage/m1.png";
+import mobileHeroImage from "../../../public/contactpage/m3.png";
 import PageHero from "../components/pageheroes/PageHero";
 import Container7 from "../components/container7/Container7";
 import { headers } from "next/headers";
