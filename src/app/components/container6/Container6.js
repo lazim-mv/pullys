@@ -9,22 +9,22 @@ const cardsData = [
   {
     name: "Aysha Raheem",
     description:
-      "“I am extremely impressed by Pulleys Group’s quality products. Their pet food has made a noticeable difference in my pet’s health and happiness!”",
+      "“I am extremely impressed by Pullys Group’s quality products. Their pet food has made a noticeable difference in my pet’s health and happiness!”",
   },
   {
     name: "Robin S",
     description:
-      "“ Pulleys Group offers reliable services and top-notch products. We have partnered with Pulleys Group for several years and we would highly recommend them!”",
+      "“ Pullys Group offers reliable services and top-notch products. We have partnered with Pullys Group for several years and we would highly recommend them!”",
   },
   {
     name: "Alicia James",
     description:
-      "“ Pulleys Group offers the best fabrics at the most reasonable prices. We had sourced high-quality fabrics for our production line. Always a pleasure to work with!”",
+      "“ Pullys Group offers the best fabrics at the most reasonable prices. We had sourced high-quality fabrics for our production line. Always a pleasure to work with!”",
   },
   {
     name: "Karen Smith",
     description:
-      "“ The pet accessories from Pulleys Group are stylish and durable. My customers love them. So do I!”",
+      "“ The pet accessories from Pullys Group are stylish and durable. My customers love them. So do I!”",
   },
 ];
 

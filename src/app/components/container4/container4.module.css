@@ -116,7 +116,7 @@
 
 .card img {
   height: var(--spacing300);
-  margin-bottom: var(--gap20);
+  margin-bottom: 0;
   width: 100%;
 }
 

@@ -95,6 +95,7 @@
   line-height: 6.349206349206349vw;
   letter-spacing: -0.0010582010582010583vw;
   margin-bottom: var(--gap40);
+  width: 40vw;
 }
 
 .contents p {
@@ -144,6 +145,7 @@
     line-height: 12.8vw;
     letter-spacing: -1.6px;
     margin-bottom: var(--gap40);
+    width: 68vw;
   }
 
   .contents p {

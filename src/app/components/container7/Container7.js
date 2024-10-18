@@ -10,7 +10,7 @@ const cardsData = [
   {
     question: "What industries does Pullys Group operate in?",
     answer:
-      "Pulleys Group operates in various industries, including trading (spices, food and beverages, confectioneries, fabrics, and industrial materials), industrial services (MEP, HVAC, mechanical construction), and manufacturing (pet accessories and pet food).",
+      "We operate in various industries, including trading (spices, food and beverages, confectioneries, fabrics, and industrial materials), industrial services (MEP, HVAC, mechanical construction), and manufacturing (pet accessories and pet food)..",
   },
   {
     question: "Do you provide custom solutions for industrial services?",

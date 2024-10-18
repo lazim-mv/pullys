@@ -101,6 +101,7 @@
 
   .content h2 {
     margin-bottom: var(--mspacing20);
+    text-align: left;
   }
 
   .content p {

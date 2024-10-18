@@ -7,7 +7,7 @@ const Container5 = ({ title, img, desc, buttonText, href, page }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2 style={{ textAlign: page ? "left" : "center" }}>{title}</h2>
+        <h2 style={{ textAlign: page && "left" }}>{title}</h2>
         <p>{desc}</p>
         {buttonText && (
           <a href={href}>
