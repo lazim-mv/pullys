@@ -8,22 +8,22 @@ import icon4 from "../../../../public/aboutPage/aboutCard/4.svg";
 
 const cardData = [
   {
-    icon: icon1,
+    icon: icon2,
     cardHeading: "Expertise Across Industries",
     desc: "With over 45 years of experience, we deliver tailored solutions that meet the unique needs of various sectors.",
   },
   {
-    icon: icon2,
+    icon: icon3,
     cardHeading: "Commitment to Quality",
     desc: "Our rigorous quality control ensures that every product and service meets the highest standards, guaranteeing customer satisfaction.",
   },
   {
-    icon: icon3,
+    icon: icon4,
     cardHeading: "Customer-Centric Approach",
     desc: "We prioritize your needs, providing personalized support and responsive service to foster lasting partnerships",
   },
   {
-    icon: icon4,
+    icon: icon1,
     cardHeading: "Innovative Solutions",
     desc: "We leverage the latest industry trends and technologies to offer innovative products and services that drive your business forward.",
   },

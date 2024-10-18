@@ -1,11 +1,21 @@
+"use client";
 import React from "react";
 import styles from "./header.module.css";
 import Image from "next/image";
 import logo from "../../../../public/logo.svg";
 import { BtnComponent } from "../common/ButtonComponent";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathName = usePathname();
+
+  const getLinkStyle = (path) => {
+    return pathName === path
+      ? { color: "#fff" }
+      : { color: "rgba(255, 255, 255, 0.6)" };
+  };
+
   return (
     <>
       <div className={styles.headerContainer}>
@@ -14,13 +24,13 @@ const Header = () => {
             <Image src={logo} alt="company logo" />
           </Link>
           <div className={styles.links}>
-            <Link href="/" className={styles.link1}>
+            <Link href="/" style={getLinkStyle("/")}>
               Home
             </Link>
-            <Link href="/about" className={styles.link2}>
+            <Link href="/about" style={getLinkStyle("/about")}>
               About Us
             </Link>
-            <Link href="/ourbusiness" className={styles.link3}>
+            <Link href="/ourbusiness" style={getLinkStyle("/ourbusiness")}>
               Business
             </Link>
           </div>

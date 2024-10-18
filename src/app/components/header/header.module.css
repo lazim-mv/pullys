@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 .default {
-  --font-Roboto: "Roboto", sans-serif;
   --containerPadding: 0 6.613756613756613vw;
   --containerPadding150: 0 9.920634920634921vw;
   --containerMarginTop: 9.920634920634921vw;
@@ -68,6 +65,9 @@
 .links {
   display: flex;
   gap: 2.6455026455026456vw;
+}
+
+.links a {
 }
 
 .links a:hover {
