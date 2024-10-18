@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.fourthColomn}>
-          <h3>Socails</h3>
+          <h3>Socials</h3>
           <div className={styles.socials}>
             <div className={styles.circle}>
               <Image src={ig} alt="ig" />
@@ -53,9 +53,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className={styles.copyRight}>
-        © 2024 All Right Reserved | Powered by procube.cx
-      </p>
+      <a href="https://www.procube.cx/">
+        <p className={styles.copyRight}>
+          © 2024 All Right Reserved | Powered by procube.cx
+        </p>
+      </a>
     </div>
   );
 };
