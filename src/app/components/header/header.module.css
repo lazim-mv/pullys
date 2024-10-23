@@ -62,13 +62,17 @@
   height: 100%;
 }
 
+.logo {
+  height: 2.380952380952381vw;
+  width: max-content;
+}
+
 .links {
   display: flex;
   gap: 2.6455026455026456vw;
 }
 
-.links a {
-}
+.links a {}
 
 .links a:hover {
   font-weight: 500;

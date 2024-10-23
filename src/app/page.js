@@ -10,7 +10,6 @@ import Container7 from "./components/container7/Container7";
 import ContactForm from "./components/contactform/ContactForm";
 import image from "../../public/common/about.png";
 import image1 from "../../public/common/container5.png";
-import { headers } from "next/headers";
 
 export default function Home() {
   return (
@@ -34,12 +33,7 @@ export default function Home() {
       <Container5
         img={image1}
         title="How We Started"
-        desc="We began our journey in 1978 as a spice trading company in Kochi,
-          India, founded on principles of quality and trust. Recognizing
-          opportunities in the market, we expanded into food and beverages,
-          fabrics, and industrial materials. Today, we are a diversified
-          enterprise, proudly serving customers across multiple countries while
-          remaining committed to excellence and reliability."
+        desc="Pullys Group began in 1978 as a spice trading company in a small town called Malappuram, Kerala. Founded on the principles of quality and trust, we recognized opportunities in the market and expanded into food and beverages, fabrics, and industrial materials. Today, we are a diversified enterprise, proudly serving customers across multiple countries while remaining committed to excellence and reliability."
         buttonText="View More"
         key={2}
         href="/about"

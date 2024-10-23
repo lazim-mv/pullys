@@ -25,7 +25,7 @@
 }
 
 .arrow {
-  width: 18px;
+  width: 1.1904761904761905vw;
   height: max-content;
   filter: brightness(1000%);
 }

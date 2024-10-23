@@ -21,7 +21,7 @@ const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.headerItemsContainer}>
           <Link href="/">
-            <Image src={logo} alt="company logo" />
+            <Image src={logo} alt="company logo" className={styles.logo} />
           </Link>
           <div className={styles.links}>
             <Link href="/" style={getLinkStyle("/")}>
