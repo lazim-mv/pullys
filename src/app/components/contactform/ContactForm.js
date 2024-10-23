@@ -41,7 +41,8 @@ const ContactForm = ({ contactPage }) => {
               <div className={styles.iconContainer}>
                 <Image src={phone} alt="phone" width={28} height={28} />
               </div>
-              <p>+966 55 523 5143</p>
+              <p>+966 55 523 5143,</p>
+              <p>+971 54 772 7245</p>
             </div>
             <div className={`${styles.card} ${styles.card2}`}>
               <div className={styles.iconContainer}>
@@ -54,8 +55,8 @@ const ContactForm = ({ contactPage }) => {
                 <Image src={pin} alt="phone" width={28} height={28} />
               </div>
               <p className={styles.location}>
-                5th Floor, Le Cygne Commercial Center, Kaab Bin Malik Street, Al
-                Olaya, Riyadh 12611
+                Office 10 , One stop business center, 3rd floor, office tower,
+                Al Ghurrair center, UAE
               </p>
             </div>
           </div>

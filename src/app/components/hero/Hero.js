@@ -23,7 +23,7 @@ const Hero = () => {
       />
       <div className={styles.heroContentContainer}>
         <div className={styles.contents}>
-          <h1>Welcome to pullys Groups</h1>
+          <h1>Welcome to pullys</h1>
           <p>
             With over 45 years of experience, we take pride in our journey from
             a modest spice trading business to a diversified enterprise. Explore

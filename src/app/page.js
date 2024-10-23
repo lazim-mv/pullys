@@ -18,7 +18,7 @@ export default function Home() {
       <AboutComponent
         buttonText="View More"
         title="About Us"
-        desc="Welcome to Pullys Group! Since 1978, we've been a leader in trading
+        desc="Welcome to Pullys! Since 1978, we've been a leader in trading
           spices, F&B, fabrics, and industrial materials, while offering
           top-notch MEP, HVAC, and mechanical services. Our manufacturing
           division creates premium pet accessories and food. Serving India,
