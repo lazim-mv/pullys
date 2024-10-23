@@ -41,7 +41,7 @@ const ContactForm = ({ contactPage }) => {
               <div className={styles.iconContainer}>
                 <Image src={phone} alt="phone" width={28} height={28} />
               </div>
-              <p>+44 (0) 1925 768 250</p>
+              <p>+966 55 523 5143</p>
             </div>
             <div className={`${styles.card} ${styles.card2}`}>
               <div className={styles.iconContainer}>
