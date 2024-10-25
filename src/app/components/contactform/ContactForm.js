@@ -37,26 +37,30 @@ const ContactForm = ({ contactPage }) => {
         <div className={styles.bottomContainer}>
           <h3>Say Hello</h3>
           <div className={styles.cards}>
-            <div className={`${styles.card} ${styles.card1}`}>
-              <div className={styles.iconContainer}>
-                <Image src={phone} alt="phone" width={28} height={28} />
+            <a href="tel:+966555235143">
+              <div className={`${styles.card} ${styles.card1}`}>
+                <div className={styles.iconContainer}>
+                  <Image src={phone} alt="phone" width={28} height={28} />
+                </div>
+                <p>+966 55 523 5143,</p>
+                <p>+971 54 772 7245</p>
               </div>
-              <p>+966 55 523 5143,</p>
-              <p>+971 54 772 7245</p>
-            </div>
-            <div className={`${styles.card} ${styles.card2}`}>
-              <div className={styles.iconContainer}>
-                <Image src={mail} alt="phone" width={28} height={28} />
+            </a>
+            <a href="mailto:info@pullysons.com">
+              <div className={`${styles.card} ${styles.card2}`}>
+                <div className={styles.iconContainer}>
+                  <Image src={mail} alt="phone" width={28} height={28} />
+                </div>
+                <p>info@pullysons.com</p>
               </div>
-              <p>info@pullysons.com</p>
-            </div>
+            </a>
             <div className={`${styles.card} ${styles.card3}`}>
               <div className={styles.iconContainer}>
                 <Image src={pin} alt="phone" width={28} height={28} />
               </div>
               <p className={styles.location}>
-                Office 10 , One stop business center, 3rd floor, office tower,
-                Al Ghurrair center, UAE
+                Office 10 , One Stop Business Center, 3rd Floor, Office Tower,
+                Al Ghurrair Center, UAE
               </p>
             </div>
           </div>

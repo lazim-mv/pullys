@@ -30,8 +30,8 @@ const Footer = () => {
         <div className={styles.thirdColomn}>
           <h3 className={styles.title}>Contact Us</h3>
           <div className={styles.address}>
-            <a href="">+966 55 523 5143</a>
-            <a href="">info@pullysons.com</a>
+            <a href="tel:+966555235143">+966 55 523 5143</a>
+            <a href="mailto:info@pullysons.com">info@pullysons.com</a>
           </div>
         </div>
         <div className={styles.fourthColomn}>

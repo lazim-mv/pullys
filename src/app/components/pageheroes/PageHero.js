@@ -26,7 +26,9 @@ const PageHero = ({
       <div className={styles.heroContentContainer}>
         <div className={styles.contents}>
           <h1>{title}</h1>
-          <p>{subTitle}</p>
+          <a href="/">
+            <p>{subTitle}</p>
+          </a>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ const AboutPage = () => {
       <AboutComponent
         img={image1}
         title="About Us"
-        desc="Welcome to Pullys Group! Since 1978, we've been a leader in trading spices, F&B, fabrics, and industrial materials, while offering top-notch MEP, HVAC, and mechanical services. Our manufacturing division creates premium pet accessories and food. Serving India, Saudi Arabia, Bahrain, and Morocco, we deliver innovation, trust, and excellence to 1000+ happy customers."
+        desc="Welcome to Pullys! Since 1978, we've been a leader in trading spices, F&B, fabrics, and industrial materials, while offering top-notch MEP, HVAC, and mechanical services. Our manufacturing division creates premium pet accessories and food. Serving India, Saudi Arabia, Bahrain, and Morocco, we deliver innovation, trust, and excellence to 1000+ happy customers."
         key={3}
       />
       <Stats />

@@ -107,6 +107,7 @@
 
 .card img {
   height: var(--gap50);
+  width: var(--gap50);
   margin-bottom: var(--gap20);
 }
 

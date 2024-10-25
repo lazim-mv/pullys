@@ -20,6 +20,7 @@ const list1 = [
   "Confectioneries",
   "Fabrics",
   "Industrial Materials",
+  "Office and Household Supplies.",
 ];
 
 const list2 = [
