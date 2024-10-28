@@ -17,7 +17,7 @@ const statData = [
   },
   {
     number: 5,
-    text: "Countries (India, Saudi Arabia, Bahrain, Morocco,UAE)",
+    text: "Countries (India, Saudi Arabia, Bahrain, Morocco, UAE)",
   },
 ];
 
