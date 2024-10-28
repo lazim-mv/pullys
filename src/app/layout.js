@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Pullys - Since 1978",
   description:
-    "Welcome to Pullys! Since 1978, we've been a leader in trading spices, F&B, fabrics, and industrial materials, while offering top-notch MEP, HVAC, and mechanical services. Our manufacturing division creates premium pet accessories and food. Serving India, Saudi Arabia, Bahrain, and Morocco, we deliver innovation, trust, and excellence to 1000+ happy customers.",
+    "Welcome to Pullys! Since 1978, we've been a leader in trading spices, F&B, fabrics, and industrial materials, while offering top-notch MEP, HVAC, and mechanical services. Our manufacturing division creates premium pet accessories and food. Serving India, Saudi Arabia, Bahrain, Morocco and UAE, we deliver innovation, trust, and excellence to 1000+ happy customers.",
 };
 
 export default function RootLayout({ children }) {
