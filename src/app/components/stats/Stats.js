@@ -16,8 +16,8 @@ const statData = [
     text: "Years Of Experience",
   },
   {
-    number: 4,
-    text: "Countries (India, Saudi Arabia, Bahrain, Morocco)",
+    number: 5,
+    text: "Countries (India, Saudi Arabia, Bahrain, Morocco,UAE)",
   },
 ];
 
@@ -50,7 +50,7 @@ const Stats = () => {
 
   useEffect(() => {
     if (inView) {
-      const duration = 1500; 
+      const duration = 1500;
       const startTime = performance.now();
 
       const animate = (time) => {

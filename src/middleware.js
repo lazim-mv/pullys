@@ -14,7 +14,7 @@ export function middleware(request) {
   const host = request.nextUrl.hostname;
   console.log(host, "hosturl");
   response.headers.set("hostname", host);
-  if (host === "www.pullysons.com") {
+  if (host === "") {
     response.headers.set("x-host", "true");
   }
 
