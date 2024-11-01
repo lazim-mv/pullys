@@ -43,7 +43,7 @@ const ContactForm = ({ contactPage }) => {
                   <Image src={phone} alt="phone" width={28} height={28} />
                 </div>
                 <p>+966 55 523 5143,</p>
-                <p>+971 54 772 7245</p>
+                <p>+971 54 772 7545</p>
               </div>
             </a>
             <a href="mailto:info@pullysons.com">
